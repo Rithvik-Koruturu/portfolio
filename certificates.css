@@ -34,7 +34,7 @@ header {
 
 /* Header Button Styles */
 header button {
-    background-color: #1C1C1C;
+    background-color: #333;
     color: #FFF;
     padding: 12px 24px;
     border: none;
@@ -46,20 +46,29 @@ header button {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover Effect for Buttons */
-header button:hover {
-    background-color: #D32F2F;
-    color: #FFF;
+/* Home Button */
+header .header-left button:nth-child(1) {
+    background-color: #1976D2; /* Blue */
+}
+
+header .header-left button:nth-child(1):hover {
+    background-color: #1565C0;
+}
+
+/* Certificates Button */
+header .header-left button:nth-child(2) {
+    background-color: #388E3C; /* Green */
+}
+
+header .header-left button:nth-child(2):hover {
+    background-color: #2E7D32;
 }
 
 /* Resume Button */
 header .resume-button {
-    background-color: #D32F2F;
-    color: #FFF;
+    background-color: #D32F2F; /* Red */
     padding: 12px 24px;
-    border: none;
     border-radius: 6px;
-    cursor: pointer;
     font-size: 14px;
     font-weight: 600;
     transition: background-color 0.3s ease;
@@ -151,18 +160,6 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-/* Adjusting button colors and link behavior */
-header .header-left button {
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-}
-
-header .header-left button:hover {
-    color: white;
-    background-color: transparent;
 }
 
 /* Responsive Adjustments for Mobile and Tablet */
