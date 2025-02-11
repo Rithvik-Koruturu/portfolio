@@ -48,20 +48,20 @@ header button {
 
 /* Home Button */
 header .header-left button:nth-child(1) {
-    background-color: #1976D2; /* Blue */
+    background-color: #D32F2F; /* Blue */
 }
 
 header .header-left button:nth-child(1):hover {
-    background-color: #1565C0;
+    background-color: #D32F2F;
 }
 
 /* Certificates Button */
 header .header-left button:nth-child(2) {
-    background-color: #388E3C; /* Green */
+    background-color: #D32F2F; /* Green */
 }
 
 header .header-left button:nth-child(2):hover {
-    background-color: #2E7D32;
+    background-color: #D32F2F;
 }
 
 /* Resume Button */
@@ -193,12 +193,10 @@ footer a:hover {
     .certification {
         flex-direction: column;
         padding: 15px;
-        margin: 10px 0; /* Adjusted for better spacing */
     }
 
     .certification-logo {
         margin-bottom: 10px;
-        max-width: 45px; /* Slightly smaller logo for mobile */
     }
 
     .certification-info h3 {
@@ -223,12 +221,10 @@ footer a:hover {
     .certification {
         flex-direction: column;
         padding: 12px;
-        margin: 8px 0; /* Adjusted for smaller screens */
     }
 
     .certification-logo {
         margin-bottom: 10px;
-        max-width: 40px; /* Smaller logo */
     }
 
     .certification-info h3 {

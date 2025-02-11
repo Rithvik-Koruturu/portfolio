@@ -27,7 +27,7 @@ header {
     z-index: 1000;
 }
 
-/* Header Buttons */
+/* Header Button Container */
 .header-left {
     display: flex;
     gap: 20px;
@@ -46,112 +46,78 @@ header button {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Themed Button Colors */
-.header-left .home-btn { background-color: #1976D2; color: white; }
-.header-left .projects-btn { background-color: #388E3C; color: white; }
-.header-left .contact-btn { background-color: #F57C00; color: white; }
-.header-left .about-btn { background-color: #7B1FA2; color: white; }
-
-/* Hover Effects */
-.header-left button:hover {
-    filter: brightness(85%);
+/* Red Button for Home, Projects, and Contact */
+.header-left button {
+    background-color: #D32F2F; /* Red color */
+    color: white;
 }
 
-/* Right-Aligned Resume Button */
+/* Hover Effects for Buttons */
+header button:hover {
+    background-color: #B71C1C; /* Darker Red on hover */
+}
+
+/* Resume Button */
 .resume-button {
-    background-color: #D32F2F;
-    color: #FFF;
+    background-color: #D32F2F; /* Red */
+    color: white;
     padding: 12px 24px;
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
     transition: background-color 0.3s ease;
-    margin-left: auto; /* Ensures it's aligned to the right */
+    margin-left: auto; /* Right-aligns the Resume button */
 }
 
+/* Hover Effect for Resume Button */
 .resume-button:hover {
     background-color: #B71C1C;
 }
 
-/* Themed Text Colors */
-h1, h2, h3 {
-    font-weight: 700;
-    text-align: center; /* Ensures headings are centered */
+/* Section Titles (h1) */
+h1.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #D32F2F; /* Red color */
+    text-decoration: underline; /* Underline for h1 */
 }
 
-h1 { color: #D32F2F; font-size: 2.5rem; }
-h2 { color: #388E3C; font-size: 2rem; }
-h3 { color: #1976D2; font-size: 1.75rem; }
+/* Section Titles (h2) */
+h2.project-title, h2.experience-title {
+    text-align: center; /* Center aligned */
+    margin-bottom: 20px;
+    color: #388E3C; /* Green color */
+    text-decoration: none; /* No underline for h2 */
+}
 
-/* Paragraph Text */
-p {
+/* Project and Experience Titles */
+h2.project-title, h2.experience-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Project and Experience Duration */
+.project-duration, .experience-duration {
+    font-size: 1rem;
+    color: #B0B0B0;
+    margin-bottom: 10px;
+}
+
+/* Project and Experience Description */
+.project-description, .experience-description {
+    font-size: 1rem;
     color: #B0B0B0;
     text-align: justify;
-    margin: 10px auto;
-    max-width: 800px;
 }
 
-/* Themed Links */
-a {
-    color: #F57C00;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #B71C1C;
-}
-
-/* Certifications Section */
+/* Main Content Container */
 .container {
     max-width: 1200px;
     margin: 120px auto 50px;
     padding: 0 20px;
-    text-align: center;
-    padding-bottom: 80px;
-}
-
-/* Certifications Header */
-.container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-/* Certification Card */
-.certification {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #D32F2F;
-    color: #E0E0E0;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    max-width: 900px;
     text-align: left;
-}
-
-/* Certification Logo */
-.certification-logo {
-    max-width: 50px;
-    margin-right: 20px;
-}
-
-/* Certification Info */
-.certification-info {
-    flex: 1;
-}
-
-.certification-info h3 {
-    color: #D32F2F;
-    margin-bottom: 5px;
-}
-
-.certification-info p {
-    color: #B0B0B0;
 }
 
 /* Footer Section */
@@ -165,6 +131,7 @@ footer {
     bottom: 0;
 }
 
+/* Footer Text */
 footer p {
     margin: 0;
 }
